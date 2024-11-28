@@ -8,7 +8,12 @@ user_preferences = {
 
 
 def update_preferences(user_pref):
-    return {}
+    return {key: value for key, value in user_pref.items() if value is not None}
+#    preferenciasUsuario = {}
+#    for key, value in user_pref.items():
+#        if value != None:
+#            preferenciasUsuario[key] = value
+#    return preferenciasUsuario
 
 
 print(update_preferences(user_preferences))
