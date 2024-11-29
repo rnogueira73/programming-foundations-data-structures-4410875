@@ -1,4 +1,7 @@
 def has_unique_characters(data):
+    setA = set(data)
+    if len(data) == len(setA):
+        return True
     return False
 
 print(has_unique_characters('sample'))
